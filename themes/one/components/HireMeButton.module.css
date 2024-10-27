@@ -1,0 +1,19 @@
+.buttonBackground {
+    background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+    background-size: 400% 100%;
+    @apply animate-btn w-[220px] lg:w-[254px] h-[3.2rem] text-white text-lg p-4 z-0 border dark:border-neutral-100 dark:text-white hover:bg-black hover:text-white rounded-xl;
+}
+
+.buttonBackground:after {
+    content: "";
+    position: absolute;
+    background-size: inherit;
+    background-image: inherit;
+    -webkit-animation: inherit;
+    animation: inherit;
+    left: 0;
+    right: 0;
+    top: 2px;
+    height: 100%;
+    filter: blur(0.5rem);
+}

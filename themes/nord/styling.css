@@ -1,0 +1,62 @@
+/* @import "nord/src/nord.css"; */
+/* @import "nord"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base { */
+:root {
+    --nord7: #2e3440;
+    --nord6: #3b4252;
+    --nord5: #434c5e;
+    --nord4: #4c566a;
+    --nord3: #d8dee9;
+    --nord2: #e5e9f0;
+    --nord1: #eceff4;
+    --action: #5e81ac;
+}
+/* } */
+
+.container {
+    @apply max-w-[104ch] mx-auto px-4 lg:px-0;
+}
+
+.bg-main {
+    @apply bg-white dark:bg-neutral-900;
+}
+
+.btn-action {
+    @apply bg-[var(--action)] hover:bg-[#88c0d0] text-white px-4 py-2 rounded-lg shadow-sm;
+}
+
+.text-action {
+    @apply text-[var(--action)];
+}
+
+.text-main {
+    @apply text-[var(--nord6)] dark:text-gray-300;
+}
+
+.text-alt {
+    @apply text-[var(--nord4)] dark:text-gray-400;
+}
+
+.text-muted {
+    @apply text-neutral-400 dark:text-gray-500;
+}
+
+body {
+    @apply bg-main text-main;
+}
+
+hr {
+    @apply border-[var(--nord2)] dark:border-[var(--nord6)];
+}
+
+a {
+    @apply text-main no-underline hover:text-[#5e81ac] dark:hover:text-white;
+}
+
+.page-title {
+    @apply text-xl font-bold my-12;
+}

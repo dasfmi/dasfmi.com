@@ -1,0 +1,7 @@
+.socialIcon {
+    @apply rounded-full p-2 border border-neutral-400 dark:border-neutral-600 hover:bg-[var(--nord5)] dark:text-neutral-400 hover:dark:text-white hover:dark:border-white cursor-pointer;
+}
+
+.socialIcon svg {
+    @apply w-6 h-6;
+}

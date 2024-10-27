@@ -1,21 +1,57 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* :root {
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    /* color: var(--foreground); */
+    /* background: var(--background); */
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
+
+/* @layer utilities {
+    .bg-alt {
+        @apply bg-[#F5F5F0] dark:bg-neutral-900;
+    }
+
+    .bg-primary {
+        @apply bg-white dark:bg-black;
+    }
+
+    .btn-primary {
+        @apply bg-black text-white dark:bg-neutral-800;
+    }
+
+    .container {
+        @apply mx-auto px-4 max-w-[120ch];
+    }
+
+    .text-muted {
+        @apply text-neutral-500;
+    }
+}
+
+@layer components {
+    .page-title {
+        @apply text-3xl lg:text-4xl flex flex-col dark:text-white mt-4 w-full;
+    }
+
+    .btn-dark {
+        @apply bg-black text-white dark:bg-white dark:text-black;
+    }
+
+    .text-subtitle-en {
+        @apply text-amber-700 dark:text-sky-600 text-sm mt-2;
+    }
+} */

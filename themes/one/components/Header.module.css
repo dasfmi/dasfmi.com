@@ -1,0 +1,12 @@
+.item {
+    @apply text-neutral-800 px-3 dark:text-neutral-400 hover:text-black hover:font-medium dark:hover:text-white hidden lg:block;
+}
+
+.active {
+    @apply text-red-500;
+}
+
+.item.active,
+.activeLink {
+    @apply bg-black text-white dark:text-white decoration-white;
+}
