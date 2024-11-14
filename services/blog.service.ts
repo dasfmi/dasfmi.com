@@ -31,13 +31,9 @@ export const getBlogPostList = async (): Promise<PostSummary[]> => {
     }
   }
 
-  console.log({ posts: posts.length });
-
   posts = posts.sort((a, b) => {
     return b.pubDate.getTime() - a.pubDate.getTime();
   });
-
-  console.log({ after: posts.length });
 
   return posts;
 };

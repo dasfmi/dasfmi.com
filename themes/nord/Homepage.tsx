@@ -5,7 +5,7 @@ import Link from "next/link";
 import { SocialIcons } from "./components/SocialIcons";
 import { ArrowLeftIcon } from "lucide-react";
 import { ServicesPage } from "./ServicesPage";
-import { Container, Divider, Row } from "@/uikit/Primitives";
+import { Container, Divider } from "@/uikit/Primitives";
 
 export const HomePage = async () => {
   const posts = (await getBlogPostList()).slice(0, 3);
@@ -13,19 +13,19 @@ export const HomePage = async () => {
   return (
     <>
       <Container>
-        <Row gap={4}>
-          <div className="py-12">
+        <section className="flex flex-col lg:flex-row gap-4 py-12">
+          <div className="">
             <h2 className="text-4xl font-bold">
               سلاماً عليكم، أنا إسلام شحاته.
             </h2>
-            <div className="w-1/2 text-xl text-alt mt-8">
+            <div className="lg:w-1/2 text-xl text-alt mt-8">
               <Description />
             </div>
           </div>
 
           <span className="flex-1" />
           <SocialIcons />
-        </Row>
+        </section>
       </Container>
 
       <Divider />
